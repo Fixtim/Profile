@@ -17,13 +17,27 @@ body {
     color: rgb(85, 85, 85);
 }
 
+.topBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(14, 197, 29);
+}
+
+.logo {
+    padding: 60px;
+    border-radius: 50%;
+    background-image: url(./logo.jpg);
+    background-size: cover;
+}
 .NavBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    padding: 10px 0 10px 0;
-    margin: 15px auto;
+    padding: 5px 0 5px 0;
+    margin: 10px auto;
+    background-color: rgb(14, 197, 29);
 }
 
 .hero {
@@ -85,6 +99,10 @@ body {
 }
 
 @media screen and (max-width: 760px) {
+    .NavBar {
+        flex-direction: column;
+        padding: 20px auto !important;
+    }
     .sch {
         visibility: hidden;
     }
